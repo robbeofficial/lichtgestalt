@@ -78,7 +78,7 @@ void keyPressed() {
 
 void draw() {
   background(64);
-  
+    
   // update volumentric display
   render(display);
   
@@ -101,7 +101,7 @@ void draw() {
     float x = v[0]/v[3]; 
     float y = v[1]/v[3];
     float z = v[2]/v[3];
-    patch.d = sqrt(x*x + y*y + z*z);
+    patch.d = (x*x + y*y + z*z);
   }
   
   // sort by distance
